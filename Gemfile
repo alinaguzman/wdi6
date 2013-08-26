@@ -23,6 +23,12 @@ group :assets do
 
 end
 
+group :production do
+  # Use unicorn as the app server
+
+  gem 'unicorn'
+end
+
 # Use backbone for front end and API calls
 gem 'backbone-on-rails'
 
@@ -64,5 +70,3 @@ group :development, :test do
 
 end
 
-# Use unicorn as the app server
-gem 'unicorn'
