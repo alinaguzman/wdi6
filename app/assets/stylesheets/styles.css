@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin: auto;
 }
 
@@ -14,8 +14,14 @@ p{
     line-height: 1.3em;
 }
 
+.break {
+    border: 1px solid rgba(200, 200, 200, 0.7);
+    margin-top: 50px;
+}
+
 .headers {
     margin: 20px;
+    padding: 20px;
     font-family: 'Josefin Slab', serif;
     font-size: 2.5em;
     font-weight: 700;
@@ -28,7 +34,8 @@ p{
     width: 100%;
     height: 45px;
     text-align: right;
-    background: white;
+    background: #f4f4f4;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.7);
     top: 0;
     position: fixed;
     clear: both;
@@ -36,7 +43,7 @@ p{
 
 #navbar ul {
     margin-right: 200px;
-    margin-top: 13px;
+    margin-top: 14px;
 }
 
 #navbar li {
@@ -73,10 +80,10 @@ p{
 }
 
 .group {
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 800px;
+    height: 650px;
+    border-top: 1px solid rgba(200, 200, 200, 1.0);
+    border-bottom: 1px solid rgba(200, 200, 200, 1.0);
     background-size: 100% auto;
     background: url('photo-1.JPG') no-repeat center top;;
 }
@@ -152,6 +159,10 @@ p{
 .timeline li:hover span{
     opacity:1.0;
     visibility:visible;
+}
+
+#title {
+    margin-top: 65px;
 }
 /*contact*/
 
