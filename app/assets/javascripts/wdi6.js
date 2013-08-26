@@ -11,7 +11,6 @@ window.Wdi6 = {
 			app.navigate($(this).attr('href'), true);
 			return false;
 		});
-		$('.group').attr('height', $(window).height());
   }
 };
 
