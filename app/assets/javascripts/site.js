@@ -5,12 +5,22 @@ var Site = {
 		}
 	},
 	scrollToStudents: function(){
-		this.animateScroll($('#students').offset().top);
+		if($(window).scrollTop != $('#students').offset().top - 45){
+			this.animateScroll($('#students').offset().top);
+		}
+	},
+
+	scrollToAbout: function() {
+		this.animateScroll($('#about').offset().top);
+	},
+	
+	scrollToContact: function() {
+		this.animateScroll($('#contact').offset().top);
 	},
 
 	animateScroll: function(scrollTo) {
 			$('html, body').animate({
-			scrollTop: scrollTo - 45
+			scrollTop: scrollTo - $('#navbar').height()
 		}, 1000);
 	}
 };
