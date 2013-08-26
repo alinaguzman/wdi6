@@ -4,8 +4,13 @@ window.Wdi6 = {
   Views: {},
   Routers: {},
   initialize: function() {
-		Site.initialize();
+		var app = new Wdi6.Routers.Application();
 		Backbone.history.start({pushState: true});
+		$('.nav_link a').click(function(e){
+			e.preventDefault();
+			app.navigate($(this).attr('href'), true);
+			return false;
+		});
   }
 };
 

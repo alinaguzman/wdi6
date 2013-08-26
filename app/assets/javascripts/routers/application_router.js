@@ -1,9 +1,15 @@
-Wdi6.Routers.Applications = Backbone.Router.extend({
+Wdi6.Routers.Application = Backbone.Router.extend({
+
 	routes: {
-		'': 'home'
+		'': 'home',
+		'students': 'students'
 	},
 
 	home: function() {
-		
+		Site.scrollToTop();
+	},
+
+	students: function() {
+		Site.scrollToStudents();
 	}
 });
