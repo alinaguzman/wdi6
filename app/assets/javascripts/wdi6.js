@@ -5,6 +5,7 @@ window.Wdi6 = {
   Routers: {},
   initialize: function() {
 		Site.initialize();
+		Backbone.history.start({pushState: true});
   }
 };
 

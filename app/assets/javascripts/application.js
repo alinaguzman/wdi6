@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require backbone
 //= require wdi6
 //= require_tree ../templates
 //= require_tree ./models
