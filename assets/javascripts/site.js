@@ -32,7 +32,8 @@ $('a').click(function(){
   return false;
 });
 
-$('.stupic').hover(function(){
+$('.stupic').on('click', function(){
+  $('.studentInfo').hide();
   var infoId = this.id.toLowerCase();
   $('#'+infoId).slideToggle("slow");
 });
