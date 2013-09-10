@@ -203,3 +203,19 @@ p{
     /*left: 0;*/
     float: left;
 }
+
+
+.stupic {
+  height: 50px;
+  width:  50px;
+  border: 1px solid black;
+  float: left;
+}
+
+
+.studentInfo {
+  height: 50px;
+  width:  50px;
+  border: 1px solid black;
+  position: absolute;
+}
