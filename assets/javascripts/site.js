@@ -25,9 +25,23 @@
 //	}
 //};
 
-$('a').click(function(){
-  $('html, body').animate({
-    scrollTop: $( $(this).attr('href') ).offset().top - 45
-  }, 1000);
-  return false;
+// $('a').click(function(){
+//   $('html, body').animate({
+//     scrollTop: $( $(this).attr('href') ).offset().top - 45
+//   }, 1000);
+//   return false;
+// });
+
+ $('.stupic').hover(function(){
+    var infoId = this.id.toLowerCase();
+    $('#'+infoId).slideToggle("slow");
+  });
+
+$(document).ready(function(){
+  $('.studentInfo').hide();
 });
+
+
+
+
+

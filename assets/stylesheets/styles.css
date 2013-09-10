@@ -190,3 +190,19 @@ p{
     height: 250px;
     width: 200px;
 }
+
+
+.stupic {
+  height: 50px;
+  width:  50px;
+  border: 1px solid black;
+  float: left;
+}
+
+
+.studentInfo {
+  height: 50px;
+  width:  50px;
+  border: 1px solid black;
+  position: absolute;
+}
