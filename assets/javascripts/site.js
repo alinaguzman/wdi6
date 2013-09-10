@@ -31,3 +31,12 @@ $('a').click(function(){
   }, 1000);
   return false;
 });
+
+$('.stupic').hover(function(){
+  var infoId = this.id.toLowerCase();
+  $('#'+infoId).slideToggle("slow");
+});
+
+$(document).ready(function(){
+  $('.studentInfo').hide();
+});
