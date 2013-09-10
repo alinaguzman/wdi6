@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: #f4f4f4;
+    background-color: #f3f3f3 !important;
     margin: auto;
 }
 
@@ -20,8 +20,6 @@ p{
 }
 
 .headers {
-    margin: 5px;
-    padding: 5px;
     font-family: 'Josefin Slab', serif;
     font-size: 2.5em;
     font-weight: 700;
@@ -32,10 +30,9 @@ p{
 
 #navbar {
     width: 100%;
-    height: 45px;
-    text-align: right;
-    background: #f4f4f4;
-    border-bottom: 2px solid rgba(200, 200, 200, 0.7);
+    height: 50px;
+    text-align: left;
+    background: rgba(200,200,200,.3);
     top: 0;
     position: fixed;
     clear: both;
@@ -43,8 +40,8 @@ p{
 }
 
 #navbar ul {
-    margin-right: 200px;
-    margin-top: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 #navbar li {
@@ -76,24 +73,27 @@ p{
 /*students*/
 
 #students {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
 .group {
     width: 100%;
-    height: 800px;
+    height: 100%;
     border-top: 1px solid rgba(200, 200, 200, 1.0);
     border-bottom: 1px solid rgba(200, 200, 200, 1.0);
-    background: url('../images/DSC_6653.JPG') no-repeat center top;
     background-size: cover;
-    background-position: 0 15px;
-
+    background-position: 0 20px;
 }
+
+.class_photo {
+    width: 100%;
+}
+
 
 /*about*/
 
-.timeline {
+#timeline {
     position:relative;
     height: 240px;
     width: 989px;
@@ -102,7 +102,7 @@ p{
     z-index: 1;
 }
 
-.timeline li{
+#timeline li{
     position:absolute;
     list-style:none;
     height:240px;
@@ -110,7 +110,7 @@ p{
     left:0;
 }
 
-.timeline li p{
+#timeline li p{
     position:absolute;
     display:block;
     text-align:center;
@@ -119,7 +119,7 @@ p{
     width:100%;
 }
 
-.timeline li span{
+#timeline li span{
     position:absolute;
     text-align: center;
     margin-left:-90px;
@@ -134,7 +134,7 @@ p{
     font-family: 'roboto', sans-serif;
 
 }
-.timeline li span:after{
+#timeline li span:after{
     display:block;
     position:absolute;
     bottom:-10px;
@@ -142,25 +142,25 @@ p{
     background:transparent;
 }
 
-.timeline li.week1{left:-10px;}
-.timeline li.week3{left:91px;}
-.timeline li.week4{left:195px;}
-.timeline li.week5{left:290px;}
-.timeline li.week6{left:388px;}
-.timeline li.week8{left:500px;}
-.timeline li.week9{left:600px;}
-.timeline li.week10{left:700px;}
-.timeline li.week11{left:800px;}
-.timeline li.week12{left:900px;}
+#timeline li.week1{left:-10px;}
+#timeline li.week3{left:91px;}
+#timeline li.week4{left:195px;}
+#timeline li.week5{left:290px;}
+#timeline li.week6{left:388px;}
+#timeline li.week8{left:500px;}
+#timeline li.week9{left:600px;}
+#timeline li.week10{left:700px;}
+#timeline li.week11{left:800px;}
+#timeline li.week12{left:900px;}
 
 
-.timeline li:hover{
+#timeline li:hover{
     cursor:default;
     color:#009999;
 }
 
-.timeline li:hover span{
-    opacity:1.0;
+#timeline li:hover span{
+    background-color: rgba(255,255,255,.9);
     visibility:visible;
 }
 
@@ -181,14 +181,27 @@ p{
 #gallery {
     height: 600px;
     width: 100%;
+    /*position: relative;*/
 }
 
-#student {
-    position: relative;
+
+#studentrows {
+    /*position: absolute;*/
+    display: block;
+    margin-left: 2.5%;
+    /*text-align: center;*/
+
+}
+
+.stupic {
+    width: 150px;
+    /*margin: auto;*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*float: left;*/
+    /*top: 0;*/
+    /*left: 0;*/
     float: left;
-    background-image: url('../images/placeholderstudent.png');
-    height: 250px;
-    width: 200px;
 }
 
 
