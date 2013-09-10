@@ -5,8 +5,12 @@
   <link rel="icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/foundation.css">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css">
+
 </head>
 <body>
+<div id="container">
 <div id="navbar">
     <ul>
     	<li class='nav_link'><a href="">Home</a></li>
@@ -16,56 +20,61 @@
     </ul>
 </div>
 
-<div class="group">
+    <div class="group">
+        <img src="assets/images/DSC_6653.JPG" class="class_photo">
+    </div>
+<div class="row">
+
+
+        <div id="about">
+            <h1 class="headers">Our 12 Week Journey</h1>
+            <div class="row" id="timeline">
+                <ul>
+                    <li class="week1"><p>Weeks 1 - 2</p><span>From almost no coding experience, we dove straight into learning
+                        Ruby and about the web</span></li>
+                    <li class="week3"><p>Week 3</p><span>We covered databases with PostgreSQL</span></li>
+                    <li class="week4"><p>Week 4</p><span>We started learning the Rails Framework</span></li>
+                    <li class="week5"><p>Week 5</p><span>Project 1 Week!</span></li>
+                    <li class="week6"><p>Weeks 6 - 7</p><span>We dove into learning Javascript, jQuery, and AJAX</span></li>
+                    <li class="week8"><p>Week 8</p><span>Project 2 Week!</span></li>
+                    <li class="week9"><p>Week 9</p><span>Backbone MV*</span></li>
+                    <li class="week10"><p>Week 10</p><span>Advanced Rails Optimization</span></li>
+                    <li class="week11"><p>Week 11</p><span>Computer Science</span></li>
+                    <li class="week12"><p>Week 12</p><span>Final Project Week!</span></li>
+                </ul>
+            </div>
+        </div>
 </div>
 
-<div id="about">
-    <h1 class="headers">Our 12 Week Journey</h1>
-    <div class="timeline">
-        <ul>
-            <li class="week1"><p>Weeks 1 - 2</p><span>From almost no coding experience, we dove straight into learning
-                Ruby and about the web</span></li>
-            <li class="week3"><p>Week 3</p><span>We covered databases with PostgreSQL</span></li>
-            <li class="week4"><p>Week 4</p><span>We started learning the Rails Framework</span></li>
-            <li class="week5"><p>Week 5</p><span>Project 1 Week!</span></li>
-            <li class="week6"><p>Weeks 6 - 7</p><span>We dove into learning Javascript, jQuery, and AJAX</span></li>
-            <li class="week8"><p>Week 8</p><span>Project 2 Week!</span></li>
-            <li class="week9"><p>Week 9</p><span>Backbone MV*</span></li>
-            <li class="week10"><p>Week 10</p><span>Advanced Rails Optimization</span></li>
-            <li class="week11"><p>Week 11</p><span>Computer Science</span></li>
-            <li class="week12"><p>Week 12</p><span>Final Project Week!</span></li>
-        </ul>
-    </div>
-</div>
 
 <hr class='break'>
 
 <div id="students">
   <h1 class="headers">Meet the Students</h1>
   <div id="gallery">
-    <div id="studentrows"></div>
+    <div id="studentrows">
 
-      <a href="#alice"><div class="stupic"></div></a>
-      <a href="#alina"><div class="stupic"></div></a>
-      <a href="#anuj"><div class="stupic"></div></a>
-      <a href="#beryl"><div class="stupic"></div></a>
-      <a href="#ben"><div class="stupic"></div></a>
-      <a href="#christine"><div class="stupic"></div></a>
-      <a href="#chris"><div class="stupic"></div></a>
-      <a href="#eric"><div class="stupic"></div></a>
-      <a href="#corbin"><div class="stupic"></div></a>
-      <a href="#jamal"><div class="stupic"></div></a>
-      <a href="#kevon"><div class="stupic"></div></a>
-      <a href="#jason"><div class="stupic"></div></a>
-      <a href="#eleyna"><div class="stupic"></div></a>
-      <a href="#teddy"><div class="stupic"></div></a>
-      <a href="#mike"><div class="stupic"></div></a>
-      <a href="#tricia"><div class="stupic"></div></a>
-      <a href="#thomas"><div class="stupic"></div></a>
-      <a href="#nick"><div class="stupic"></div></a>
-      <a href="#wesley"><div class="stupic"></div></a>
-      <a href="#zach"><div class="stupic"></div></a>
-
+      <a href="#alice"><div class="stupic"><img src="assets/images/alice.jpg" width=""/></div></a>
+      <a href="#alina"><div class="stupic"><img src="assets/images/alina.jpg" width=""/></div></a>
+      <a href="#anuj"><div class="stupic"><img src="assets/images/anuj.jpg" width=""/></div></a>
+      <a href="#beryl"><div class="stupic"><img src="assets/images/beryl.jpg" width=""/></div></a>
+      <a href="#ben"><div class="stupic"><img src="assets/images/ben.jpg" width=""/></div></a>
+      <a href="#christine"><div class="stupic"><img src="assets/images/christine.jpg" width=""/></div></a>
+      <a href="#chris"><div class="stupic"><img src="assets/images/chris.jpg" width=""/></div></a>
+      <a href="#eric"><div class="stupic"><img src="assets/images/eric.jpg" width=""/></div></a>
+      <a href="#corbin"><div class="stupic"><img src="assets/images/corbin.jpg" width=""/></div></a>
+      <a href="#jamal"><div class="stupic"><img src="assets/images/jamal.jpg" width=""/></div></a>
+      <a href="#kevon"><div class="stupic"><img src="assets/images/kevon.jpg" width=""/></div></a>
+      <a href="#jason"><div class="stupic"><img src="assets/images/placeholderstudent.png" width=""/></div></a>
+      <a href="#teddy"><div class="stupic"><img src="assets/images/placeholderstudent.png" width=""/></div></a>
+      <a href="#mike"><div class="stupic"><img src="assets/images/mike.jpg" width=""/></div></a>
+      <a href="#tim"><div class="stupic"><img src="assets/images/tim.jpg" width=""/></div></a>
+      <a href="#tricia"><div class="stupic"><img src="assets/images/trisha.jpg" width=""/></div></a>
+      <a href="#thomas"><div class="stupic"><img src="assets/images/thomas.jpg" width=""/></div></a>
+      <a href="#nick"><div class="stupic"><img src="assets/images/nick.jpg" width=""/></div></a>
+      <a href="#wesley"><div class="stupic"><img src="assets/images/wesley.jpg" width=""/></div></a>
+      <a href="#zach"><div class="stupic"><img src="assets/images/zach.jpg" width=""/></div></a>
+</div>
   </div>
 
     <div id="alice"></div>
@@ -102,6 +111,7 @@
 <div style="height:1000px"></div>
 
 <div id="footer">
+</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
